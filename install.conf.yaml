@@ -41,3 +41,6 @@
       glob: true
       path: vscode/*.json
       force: true
+
+- shell:
+  - [cat $DOTFILES/vscode/extensions.txt | xargs -L 1 code --install-extension, Installing VS Code extensions]
