@@ -47,9 +47,10 @@
       path: vscode/macos/*.json
       force: true
 
-    ~/.config/karabiner/karabiner.json:
+    ~/.config/karabiner/assets/complex_modifications/:
       if: '[ `uname` = Darwin ]'
-      path: karabiner/karabiner.json
+      glob: true
+      path: karabiner/*.json
       force: true
 
     ~/.hammerspoon:

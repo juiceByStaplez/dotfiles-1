@@ -6,7 +6,7 @@ install:
 
 # Generate karabiner.json and bounce karabiner
 karabiner:
-	jsonnet karabiner/karabiner.jsonnet -o karabiner/karabiner.json
+	jsonnet karabiner/hyper.jsonnet -o karabiner/hyper.json
 	launchctl stop org.pqrs.karabiner.karabiner_console_user_server
 	sleep 0.2
 	launchctl start org.pqrs.karabiner.karabiner_console_user_server
